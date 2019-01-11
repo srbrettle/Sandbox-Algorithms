@@ -1,4 +1,4 @@
-# Sandbox-Just-For-Fun
+# Sandbox-Algorithms-Just-For-Fun
 Sandbox for playing with different languages, IDLs, etc.
 _____
 
