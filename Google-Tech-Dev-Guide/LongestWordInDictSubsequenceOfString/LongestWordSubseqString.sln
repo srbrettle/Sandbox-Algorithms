@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestWordSubseqString", "LongestWordSubseqString\LongestWordSubseqString.csproj", "{78BED052-2E87-4FE2-B5B6-B6B44B89ECC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LongestWordSubseqString", "..\Test.LongestWordSubseqString\Test.LongestWordSubseqString.csproj", "{472DE73E-870A-4157-9C4A-B708728C4222}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78BED052-2E87-4FE2-B5B6-B6B44B89ECC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BED052-2E87-4FE2-B5B6-B6B44B89ECC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BED052-2E87-4FE2-B5B6-B6B44B89ECC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BED052-2E87-4FE2-B5B6-B6B44B89ECC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472DE73E-870A-4157-9C4A-B708728C4222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472DE73E-870A-4157-9C4A-B708728C4222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472DE73E-870A-4157-9C4A-B708728C4222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472DE73E-870A-4157-9C4A-B708728C4222}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AB1EAE7-6FAE-4EC4-89BB-FD86E014655C}
+	EndGlobalSection
+EndGlobal
