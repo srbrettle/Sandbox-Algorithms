@@ -1,3 +1,5 @@
+// https://codingbat.com/prob/p189576
+
 public int maxSpan(int[] nums) {
   int maxSpan = 0;
   // Enumerate through array
