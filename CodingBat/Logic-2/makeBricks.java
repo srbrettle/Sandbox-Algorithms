@@ -18,7 +18,7 @@ public boolean makeBricks(int small, int big, int goal) {
   }
   return goal == 0;
   */
-  // Refactor to remove small brick loop
+  // Refactor to replace small brick loop
   if (small >= goal) {
     return true;
   }
