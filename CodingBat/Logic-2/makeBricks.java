@@ -10,11 +10,18 @@ public boolean makeBricks(int small, int big, int goal) {
   }
   
   // use small bricks to build up rest of goal
+  /*
   while ((small > 0) && (goal > 0)) {
     // small brick worth 1 inch
     --goal;
     --small;
   }
-  
   return goal == 0;
+  */
+  // Refactor to remove small brick loop
+  if (small >= goal) {
+    return true;
+  }
+  
+  return false;
 }
