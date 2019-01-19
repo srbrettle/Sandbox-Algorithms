@@ -1,5 +1,5 @@
-// https://leetcode.com/problems/distribute-candies
-// Details - Runtime: 140 ms, faster than 82.35% of Python online submissions for Distribute Candies.
+# https://leetcode.com/problems/distribute-candies
+# Details - Runtime: 140 ms, faster than 82.35% of Python online submissions for Distribute Candies.
 
 class Solution:
     def distributeCandies(self, candies):        
