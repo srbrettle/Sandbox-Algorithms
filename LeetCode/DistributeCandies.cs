@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/distribute-candies/
-
 // Details - Runtime: 316 ms, faster than 97.67% of C# online submissions for Distribute Candies.
 
 public class Solution {
