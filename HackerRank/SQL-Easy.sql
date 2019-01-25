@@ -43,3 +43,29 @@ FROM STATION;
 SELECT DISTINCT CITY
 FROM STATION
 WHERE MOD(ID, 2) = 0;
+
+-- Weather Observation Station 4
+-- https://www.hackerrank.com/challenges/weather-observation-station-4/problem
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
+FROM STATION
+
+-- Weather Observation Station 5
+-- https://www.hackerrank.com/challenges/weather-observation-station-5/problem
+-- Oracle
+SELECT * 
+FROM 
+(
+    SELECT CITY, LENGTH(CITY) length 
+    FROM STATION 
+    ORDER BY length ASC, CITY
+) 
+WHERE rownum = 1;
+
+SELECT * 
+FROM 
+(
+    SELECT CITY, LENGTH(CITY) length 
+    FROM STATION 
+    ORDER BY length DESC, CITY
+) 
+WHERE rownum = 1;
