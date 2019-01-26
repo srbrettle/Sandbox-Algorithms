@@ -173,5 +173,23 @@ AND NOT
     OR CITY LIKE 'U%'
 );
 
--- 
--- 
+-- Higher Than 75 Marks
+-- https://www.hackerrank.com/challenges/more-than-75-marks/problem
+SELECT Name
+FROM STUDENTS
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3), ID ASC;
+
+-- Employee Names
+-- https://www.hackerrank.com/challenges/name-of-employees/problem
+SELECT name
+FROM Employee
+ORDER BY name;
+
+-- Employee Salaries
+-- https://www.hackerrank.com/challenges/salary-of-employees/problem
+SELECT name
+FROM Employee
+WHERE months < 10
+AND salary > 2000
+ORDER BY employee_id;
