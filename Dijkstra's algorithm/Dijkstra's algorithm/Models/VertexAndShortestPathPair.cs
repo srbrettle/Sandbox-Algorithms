@@ -2,8 +2,8 @@
 {
     public class VertexAndShortestPathPair
     {
-        readonly Vertex Vertex;
-        int LowestCostPath;
+        public readonly Vertex Vertex;
+        public int LowestCostPath;
 
         public VertexAndShortestPathPair(Vertex vertex)
         {

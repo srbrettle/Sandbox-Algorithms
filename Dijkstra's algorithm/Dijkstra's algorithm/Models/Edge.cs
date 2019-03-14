@@ -2,9 +2,9 @@
 {
     public class Edge
     {        
-        readonly int Weight;
-        readonly Vertex DirectedFrom;
-        readonly Vertex DirectedTo;
+        public readonly int Weight;
+        public readonly Vertex DirectedFrom;
+        public readonly Vertex DirectedTo;
 
         public Edge(int weight, Vertex directedFrom, Vertex directedTo)
         {
