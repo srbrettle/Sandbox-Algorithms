@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dijkstra_s_algorithm.Models
+namespace DijkstrasAlgorithm.Models
 {
-    class MemoizationTable
+    public class MemoizationTable
     {
-        ICollection<KeyValuePair<Guid, int>> shortestPathsTable
+        public ICollection<VertexAndShortestPathPair> ShortestPathsTable = new List<VertexAndShortestPathPair>;
+
+        public void AddVertexAndShortestPathPair(VertexAndShortestPathPair vertexAndShortestPathPair)
+        {
+            this.ShortestPathsTable.Add(vertexAndShortestPathPair);
+        }
     }
 }

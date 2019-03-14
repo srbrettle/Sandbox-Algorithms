@@ -1,6 +1,6 @@
 ﻿namespace DijkstrasAlgorithm.Models
 {
-    class VertexAndShortestPathPair
+    public class VertexAndShortestPathPair
     {
         readonly Vertex Vertex;
         int LowestCostPath;
@@ -10,7 +10,5 @@
             this.Vertex = vertex;
             this.LowestCostPath = int.MaxValue;
         }
-
-
     }
 }
