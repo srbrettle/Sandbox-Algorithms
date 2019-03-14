@@ -1,12 +1,12 @@
 ﻿namespace DijkstrasAlgorithm.Models
 {
-    class Edge
+    public class Edge
     {        
         readonly int Weight;
         readonly Vertex DirectedFrom;
         readonly Vertex DirectedTo;
 
-        public Edge(int weight, Vertex directedTo, Vertex directedFrom)
+        public Edge(int weight, Vertex directedFrom, Vertex directedTo)
         {
             this.Weight = weight;
             this.DirectedFrom = directedFrom;

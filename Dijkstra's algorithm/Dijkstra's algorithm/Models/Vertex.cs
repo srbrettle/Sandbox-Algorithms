@@ -5,11 +5,22 @@ namespace DijkstrasAlgorithm.Models
 {
     public class Vertex
     {
-        readonly Guid ID;
-        readonly ICollection<Edge> DirectedEdges = new List<Edge>;        
+        public readonly Guid ID;
+        public ICollection<Edge> DirectedEdges = new List<Edge>;        
 
-        public Vertex(Guid id)
+        public Vertex(Guid id = default(Guid))
         {
-            this.ID = id;
+            if (id != default(Guid) {
+                this.ID = id;
+            }
+            else
+            {
+                this.ID = Guid.NewGuid();
+            }
+        }
+
+        public void AddEdge(Edge edge)
+        {
+            DirectedEdges.Add(edge);
         }
     }
