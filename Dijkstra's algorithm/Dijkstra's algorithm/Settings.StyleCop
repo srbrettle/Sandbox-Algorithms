@@ -1,0 +1,8 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>Dijkstra</Value>
+      <Value>Memoization</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+</StyleCopSettings>
