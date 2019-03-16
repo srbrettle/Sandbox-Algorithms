@@ -19,7 +19,7 @@ namespace DijkstrasAlgorithm.Models
         /// <summary>
         /// The lowest discovered cost to reach the vertex.
         /// </summary>
-        public int LowestCostPath;
+        private int lowestCostPath;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="VertexAndShortestPathPair" /> class.
@@ -28,7 +28,12 @@ namespace DijkstrasAlgorithm.Models
         public VertexAndShortestPathPair(Vertex vertex)
         {
             this.Vertex = vertex;
-            this.LowestCostPath = int.MaxValue;
+            this.lowestCostPath = int.MaxValue;
         }
+
+        /// <summary>
+        /// Gets or sets the lowest cost path to the vertex.
+        /// </summary>
+        public int LowestCostPath { get => this.lowestCostPath; set => this.lowestCostPath = value; }
     }
 }

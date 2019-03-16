@@ -33,7 +33,7 @@ namespace DijkstrasAlgorithm
 
                 // Find lowest weighted edge to an unvisited vertex from current vertex
                 bool changed = false;
-                foreach (Edge edge in vertex.DirectedEdges.Where(x => !x.DirectedTo.Visited))
+                foreach (Edge edge in vertex.GetDirectedEdges().Where(x => !x.DirectedTo.Visited))
                 {
                     memoTable.Update(edge.DirectedTo, costToCurrentVertex + edge.Weight);
 

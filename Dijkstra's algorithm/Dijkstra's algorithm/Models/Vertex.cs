@@ -8,6 +8,7 @@ namespace DijkstrasAlgorithm.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     /// <summary>
     /// An individual vertex.
@@ -22,12 +23,12 @@ namespace DijkstrasAlgorithm.Models
         /// <summary>
         /// Collection of directed edges for the vertex.
         /// </summary>
-        public ICollection<Edge> DirectedEdges = new List<Edge>();
+        private ICollection<Edge> directedEdges = new List<Edge>();
 
         /// <summary>
         /// Boolean for whether the vertex has been visited.
         /// </summary>
-        public bool Visited = false;
+        private bool visited = false;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Vertex" /> class.
@@ -46,12 +47,17 @@ namespace DijkstrasAlgorithm.Models
         }
 
         /// <summary>
+        /// Gets or sets a value indicating whether the vertex has been visited.
+        /// </summary>
+        public bool Visited { get => this.visited; set => this.visited = value; }
+
+        /// <summary>
         /// Adds an vertex edge.
         /// </summary>
         /// <param name="edge">The edge to add.</param>
         public void AddEdge(Edge edge)
         {
-            this.DirectedEdges.Add(edge);
+            this.directedEdges.Add(edge);
         }
 
         /// <summary>
@@ -63,6 +69,23 @@ namespace DijkstrasAlgorithm.Models
         {
             Edge edge = new Edge(weight, this, vertex);
             this.AddEdge(edge);
+        }
+
+        /// <summary>
+        /// Gets the directed edges of a vertex, filtered if a lambda expression is input
+        /// </summary>
+        /// <param name="filter">Lambda expression to use to filter the collection of edges.</param>
+        /// <returns>Collection of edges</returns>
+        public ICollection<Edge> GetDirectedEdges(Func<Edge, bool> filter = null)
+        {
+            if (filter != null)
+            {
+                return this.directedEdges;
+            }
+            else
+            {
+                return this.directedEdges.Where(filter).ToList();
+            }
         }
     }
 }
