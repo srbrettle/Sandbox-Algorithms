@@ -2,6 +2,7 @@
   <GlobalSettings>
     <CollectionProperty Name="RecognizedWords">
       <Value>Dijkstra</Value>
+      <Value>Dijkstra's</Value>
       <Value>Memoization</Value>
     </CollectionProperty>
   </GlobalSettings>

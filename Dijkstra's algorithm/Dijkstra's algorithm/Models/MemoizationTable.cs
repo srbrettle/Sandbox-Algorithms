@@ -17,7 +17,12 @@ namespace DijkstrasAlgorithm.Models
         /// <summary>
         /// Collection of vertex and shortest path pair, this represents the shortest path table.
         /// </summary>
-        public ICollection<VertexAndShortestPathPair> ShortestPathsTable = new List<VertexAndShortestPathPair>();
+        private ICollection<VertexAndShortestPathPair> shortestPathsTable = new List<VertexAndShortestPathPair>();
+
+        /// <summary>
+        /// Gets the value for the Shortest Paths Table
+        /// </summary>
+        public ICollection<VertexAndShortestPathPair> ShortestPathsTable { get => this.shortestPathsTable; }
 
         /// <summary>
         /// Generate a vertex and shortest path pair and add to the shortest path table.
