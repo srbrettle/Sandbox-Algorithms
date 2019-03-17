@@ -78,7 +78,7 @@ namespace DijkstrasAlgorithm.Models
         /// <returns>Collection of edges</returns>
         public ICollection<Edge> GetDirectedEdges(Func<Edge, bool> filter = null)
         {
-            if (filter != null)
+            if (filter == null)
             {
                 return this.directedEdges;
             }
