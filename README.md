@@ -1,5 +1,10 @@
-# Sandbox-Algorithms-Just-For-Fun
-Sandbox for playing with different languages, IDLs, etc.
+# Sandbox-Algorithms
+Sandbox for different languages, IDLs, algorithms etc.
+_____
+
+# Dijkstra's Algorithm
+Dijkstra algorithm - Implementation to calculate the shortest path between vertices in  a weighted digraph.
+
 _____
 
 ## FizzBuzz
